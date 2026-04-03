@@ -71,33 +71,7 @@ Traduce páginas web y desbloquea funciones especiales:
 
 ---
 
-## 🛠️ Estructura del Proyecto
 
-```
-LingoLayer/
-├── manifest.json           # Manifest V3
-├── icons/                  # Íconos de la extensión
-├── popup/
-│   ├── popup.html          # Interfaz del popup
-│   └── popup.js            # Lógica del popup
-├── options/
-│   ├── options.html         # Página de opciones
-│   └── options.js           # Lógica de opciones
-├── scripts/
-│   ├── background.js       # Service Worker (API + gamificación)
-│   ├── content.js          # Script de contenido (traducción)
-│   ├── titles.js           # Módulo de títulos (lazy loaded)
-│   └── ocr.js              # Módulo OCR con Tesseract.js (lazy loaded)
-├── styles/
-│   ├── popup.css           # Estilos del popup
-│   ├── options.css         # Estilos de opciones
-│   └── styles.css          # Estilos de las traducciones
-├── README.md
-├── CONTRIBUTING.md
-├── LICENSE
-└── .github/
-    └── FUNDING.yml
-```
 
 ---
 
