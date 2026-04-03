@@ -53,7 +53,7 @@ Traduce páginas web y desbloquea funciones especiales:
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/Nettoolshub-v1/LingoLayer.git
+   git clone https://github.com/laleiker/LingoLayer.git
    ```
 
 2. **Abre Chrome** y navega a:
@@ -124,7 +124,7 @@ LingoLayer es un proyecto gratuito y de código abierto. Si te resulta útil, co
 <table>
   <tr>
     <td align="center">
-      <strong>Nettoolshub-v1</strong><br>
+      <strong>laleiker</strong><br>
       <sub>Creador & Desarrollador</sub>
     </td>
     <td align="center">
@@ -146,6 +146,6 @@ Este proyecto está bajo la [Licencia MIT](LICENSE). Puedes usarlo, modificarlo 
 
 <div align="center">
 
-Hecho con ❤️ por Nettoolshub-v1 & Nekorb
+Hecho con ❤️ por laleiker & Nekorb
 
 </div>
