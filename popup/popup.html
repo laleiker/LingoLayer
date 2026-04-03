@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoLayer</title>
+    <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header fade-in">
+        <div class="logo-row">
+            <img src="../icons/icon48.png" alt="LingoLayer" class="logo-icon">
+            <span class="app-name">LingoLayer</span>
+        </div>
+        <span class="version-badge">v2.0</span>
+    </div>
+
+    <!-- Main Controls -->
+    <div class="section fade-in">
+        <div class="card">
+            <div class="main-toggle">
+                <div>
+                    <div class="toggle-label">
+                        <span class="status-dot" id="status-dot"></span>
+                        Traducción
+                    </div>
+                    <div class="toggle-sublabel" id="status-text">Desactivada</div>
+                </div>
+                <label class="switch" id="main-switch">
+                    <input type="checkbox" id="toggle-translation">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="mode-row">
+                <span class="mode-label">Modo de traducción</span>
+                <select id="mode-select" class="mode-select">
+                    <option value="paragraph">Por Párrafo</option>
+                    <option value="sentence">Por Oración</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamification / Progress -->
+    <div class="section fade-in">
+        <div class="card">
+            <div class="card-title">Tu Progreso</div>
+            <div class="level-header">
+                <span class="level-name" id="level-name">Novato</span>
+                <span class="level-badge" id="level-badge">📖</span>
+            </div>
+            <div class="word-count">
+                Palabras traducidas: <span id="word-count">0</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="progress-label" id="progress-label">0 / 500 para siguiente nivel</div>
+        </div>
+    </div>
+
+    <!-- Unlockable Modes -->
+    <div class="section fade-in">
+        <div class="card">
+            <div class="card-title">Modos Especiales</div>
+
+            <!-- Titles Mode -->
+            <div class="mode-card locked" id="titles-card">
+                <div class="mode-card-left">
+                    <div class="mode-card-icon">📑</div>
+                    <div class="mode-card-info">
+                        <h4>Modo Títulos</h4>
+                        <p id="titles-status">Desbloquea a las 1,000 palabras</p>
+                    </div>
+                </div>
+                <span class="lock-icon" id="titles-lock">🔒</span>
+                <label class="switch mode-switch" id="titles-switch" style="display:none;">
+                    <input type="checkbox" id="toggle-titles">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- OCR Mode -->
+            <div class="mode-card locked" id="ocr-card">
+                <div class="mode-card-left">
+                    <div class="mode-card-icon">🖼️</div>
+                    <div class="mode-card-info">
+                        <h4>Modo Imágenes (OCR)</h4>
+                        <p id="ocr-status">Desbloquea a las 5,000 palabras</p>
+                    </div>
+                </div>
+                <span class="lock-icon" id="ocr-lock">🔒</span>
+                <label class="switch mode-switch" id="ocr-switch" style="display:none;">
+                    <input type="checkbox" id="toggle-ocr">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donation -->
+    <div class="section fade-in">
+        <div class="card donate-card">
+            <p class="donate-text">
+                ¿Te gusta <strong>LingoLayer</strong>? Tu donación ayuda a mantener este proyecto libre y a pagar el café del desarrollador ☕
+            </p>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=NXN5HXZ3Y9BSG"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="donate-btn"
+               id="donate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.002A.775.775 0 0 1 5.71 1.33h6.265c2.09 0 3.592.455 4.46 1.353.84.87 1.074 2.145.693 3.79-.543 2.348-1.585 3.953-3.1 4.772-1.46.789-3.386.788-5.234.788H7.586l-.51 9.304z"/>
+                </svg>
+                Donar con PayPal
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#" id="open-options">⚙️ Opciones</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/Nettoolshub-v1/LingoLayer" target="_blank" rel="noopener">GitHub</a>
+            <span class="separator">|</span>
+            <span style="font-size:11px; color:#475569">Nettoolshub-v1 & Nekorb</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

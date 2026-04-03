@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoLayer — Opciones</title>
+    <link rel="stylesheet" href="../styles/options.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="page-header">
+            <h1>⚙️ LingoLayer</h1>
+            <p>Configuración y Estadísticas</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="card">
+            <h2><span class="icon">📊</span> Tus Estadísticas</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-words">0</div>
+                    <div class="stat-label">Palabras</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-level">0</div>
+                    <div class="stat-label">Nivel</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-modes">2</div>
+                    <div class="stat-label">Modos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Levels -->
+        <div class="card">
+            <h2><span class="icon">🎮</span> Sistema de Niveles</h2>
+            <ul class="levels-list" id="levels-list">
+                <!-- Populated by JS -->
+            </ul>
+        </div>
+
+        <!-- Advanced -->
+        <div class="card">
+            <h2><span class="icon">🔧</span> Avanzado</h2>
+            <p style="color: #94a3b8; font-size: 13px; margin-bottom: 16px;">
+                Reiniciar tu progreso borrará todas las palabras traducidas y los modos desbloqueados. Esta acción no se puede deshacer.
+            </p>
+            <button class="btn-danger" id="reset-progress">Reiniciar Progreso</button>
+        </div>
+
+        <!-- Donate -->
+        <div class="card donate-section">
+            <h2><span class="icon">💛</span> Apoya este proyecto</h2>
+            <p>
+                <strong>LingoLayer</strong> es un proyecto gratuito y de código abierto creado con mucho cariño.
+                Si te resulta útil, considera hacer una pequeña donación. <br>
+                Tu apoyo ayuda a mantener el proyecto actualizado, agregar nuevas funciones y, sobre todo,
+                a pagar el café del desarrollador ☕ <br><br>
+                <em>Cada donación, sin importar el monto, nos motiva a seguir mejorando.</em>
+            </p>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=NXN5HXZ3Y9BSG"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="donate-btn"
+               id="donate-btn-options">
+                ☕ Invítanos un café con PayPal
+            </a>
+        </div>
+
+        <!-- Credits -->
+        <div class="credits">
+            <p>
+                Creado con ❤️ por <strong>Nettoolshub-v1</strong><br>
+                Co-creado con <strong>Nekorb</strong> — Gracias por creer en este proyecto 🙌<br><br>
+                <a href="https://github.com/Nettoolshub-v1/LingoLayer" target="_blank">GitHub</a> ·
+                LingoLayer v2.0 · Open Source (MIT)
+            </p>
+        </div>
+
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

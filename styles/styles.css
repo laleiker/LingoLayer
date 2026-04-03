@@ -1,0 +1,45 @@
+/* ─── LingoLayer — Content Styles (Translation Overlays) ─── */
+
+.lingolayer-translation {
+    display: block;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 0.88em;
+    color: #7c8db5;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    line-height: 1.45;
+    font-style: italic;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 0;
+    opacity: 0.85;
+    pointer-events: none;
+    border-left: 2px solid rgba(99, 102, 241, 0.3);
+    padding-left: 8px;
+    animation: ll-slideIn 0.3s ease;
+}
+
+@keyframes ll-slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 0.85;
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .lingolayer-translation {
+        color: #8b9dc3;
+        border-left-color: rgba(139, 92, 246, 0.4);
+    }
+}
+
+/* Wrapper for flex/grid contexts */
+.lingolayer-wrapper {
+    display: flex;
+    flex-direction: column;
+}

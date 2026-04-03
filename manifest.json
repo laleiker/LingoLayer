@@ -1,0 +1,52 @@
+{
+    "manifest_version": 3,
+    "name": "LingoLayer",
+    "version": "2.0.0",
+    "description": "Traducción interlineal de inglés a español. Lee cualquier página web con traducciones debajo del texto original. Desbloquea modos especiales mientras más traduzcas.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "contextMenus"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "options_page": "options/options.html",
+    "host_permissions": [
+        "https://translate.googleapis.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "styles/styles.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["scripts/ocr.js", "scripts/titles.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
