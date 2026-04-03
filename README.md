@@ -93,6 +93,16 @@ LingoLayer es un proyecto gratuito y de código abierto. Si te resulta útil, co
 
 ---
 
+## 🤖 Desarrollado con Inteligencia Artificial
+
+Este proyecto fue desarrollado en su **totalidad** utilizando herramientas de Inteligencia Artificial Avanzada mediante *Prompt Engineering*:
+- **Gemini 3.1 Pro**: Lógica del background service worker, manipulación del DOM, sistema de gamificación y estructura principal.
+- **Claude Opus 4.6**: Diseño de interfaz premium (UI/UX) con glassmorphism, generación de assets y refactorización visual.
+
+LingoLayer es un ejemplo de cómo las IAs modernas pueden llevar una idea desde el concepto hasta un producto listo para producción.
+
+---
+
 ## 👥 Créditos
 
 <table>
